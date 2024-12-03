@@ -16,6 +16,12 @@
       "type": "string",
       "minLength": 2
     },
+    "favourite": {
+      "default": "true",
+      "required": [],
+      "title": "favourite",
+      "type": "boolean"
+    },
     "replicas": {
       "default": 1,
       "required": [],
