@@ -20,5 +20,12 @@ spec:
       containers:
         - image: nginx:latest
           name: {{ .Values.appName }}
+          env:
+          {{- if ((.Values.environment)) }}
+          {{- range $key, $value := .Values.environment }}
+            - name: {{ $key }}
+              value: {{ $value | quote }}
+          {{- end }}
+          {{- end }}
 
       
