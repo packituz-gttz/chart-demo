@@ -28,6 +28,10 @@
       "title": "replicas",
       "type": "integer",
       "minimum": 1
+    },
+    "environmentVars": {
+      "title": "environment variables",
+      "type": "object"
     }
   },
   "required": [
