@@ -3,16 +3,19 @@ kind: Deployment
 metadata:
   labels:
     app: {{ .Values.appName }}
+    team: {{ .Values.team }}
   name: {{ .Values.appName }}
 spec:
   replicas: {{ .Values.replicas | default 1 }}
   selector:
     matchLabels:
       app: {{ .Values.appName }}
+      team: {{ .Values.team }}
   template:
     metadata:
       labels:
         app: {{ .Values.appName }}
+        team: {{ .Values.team }}
     spec:
       containers:
         - image: nginx:latest

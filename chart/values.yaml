@@ -1,2 +1,3 @@
 appName: my-app
 replicas: 2
+team: marketing
