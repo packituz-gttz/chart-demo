@@ -7,7 +7,7 @@
       "required": [],
       "title": "appName",
       "type": "string",
-      "maxLength": 10,
+      "maxLength": 50,
       "minLength": 5
     },
     "team": {
