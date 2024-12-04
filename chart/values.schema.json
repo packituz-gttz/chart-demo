@@ -21,7 +21,8 @@
       "default": "true",
       "required": [],
       "title": "favourite",
-      "type": "boolean"
+      "type": "boolean",
+      "immutable": true
     },
     "replicas": {
       "default": 1,
