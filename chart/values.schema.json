@@ -14,7 +14,8 @@
       "required": [],
       "title": "team",
       "type": "string",
-      "minLength": 2
+      "minLength": 2,
+      "immutable": "true"
     },
     "favourite": {
       "default": "true",
