@@ -1,5 +1,5 @@
 appName: my-app
 replicas: 2
 team: marketing
-favourite: true
+favourite: false
 environmentVars:
