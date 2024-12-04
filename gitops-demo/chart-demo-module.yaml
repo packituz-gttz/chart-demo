@@ -1,0 +1,16 @@
+apiVersion: cyclops-ui.com/v1alpha1
+kind: Module
+metadata:
+  name: chart-demo-module
+  namespace: cyclops
+spec:
+  template:
+    path: chart
+    repo: https://github.com/packituz-gttz/chart-demo
+    version: master
+  values:
+    appName: mychart-app
+    replicas: 2
+    team: sales
+    favourite: true
+    environmentVars:
