@@ -18,7 +18,7 @@ spec:
         team: {{ .Values.team }}
     spec:
       containers:
-        - image: nginx:latest
+        - image: nginx:stable-alpine
           name: {{ .Values.appName }}
           env:
           {{- if ((.Values.environmentVars)) }}
