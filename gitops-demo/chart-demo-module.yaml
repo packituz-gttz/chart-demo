@@ -10,7 +10,6 @@ spec:
     version: master
   values:
     appName: mychart-app
-    replicas: 2
     team: sales
     favourite: true
     environmentVars:
