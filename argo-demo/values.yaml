@@ -1,3 +1,3 @@
 image:
-  repository: gcr.io/heptio-images/ks-guestbook-demo
+  repository: gcr.io/packituz-gttz/ks-guestbook-demo
   tag: "0.1"
