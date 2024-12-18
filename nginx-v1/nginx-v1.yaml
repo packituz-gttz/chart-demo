@@ -21,9 +21,3 @@ spec:
     favourite: true
     replicas: 1
     team: sales
-status:
-  iconURL: ""
-  managedGVRs: null
-  reconciliationStatus:
-    errors: null
-  templateResolvedVersion: ""
