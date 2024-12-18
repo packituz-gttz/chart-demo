@@ -19,7 +19,7 @@ spec:
     appName: nginx1
     environmentVars: {}
     favourite: true
-    replicas: 9
+    replicas: 1
     team: sales
 status:
   iconURL: ""
