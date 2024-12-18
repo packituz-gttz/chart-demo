@@ -19,7 +19,6 @@ spec:
     appName: nginx2
     environmentVars:
       OS: linux
-      USER_NAME: hola
     favourite: true
     replicas: 12
     team: genai
