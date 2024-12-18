@@ -9,6 +9,7 @@ metadata:
   labels:
     app.kubernetes.io/instance: app
   name: demo-module1
+  namespace: cyclops
 spec:
   targetNamespace: default
   template:
