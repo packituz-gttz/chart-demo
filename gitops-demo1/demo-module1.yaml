@@ -6,8 +6,9 @@ metadata:
     cyclops-ui.com/write-repo: https://github.com/packituz-gttz/chart-demo
     cyclops-ui.com/write-revision: master
   creationTimestamp: null
+  labels:
+    app.kubernetes.io/instance: app
   name: demo-module1
-  namespace: cyclops
 spec:
   targetNamespace: default
   template:
@@ -19,5 +20,11 @@ spec:
     appName: demo-m1
     environmentVars: {}
     favourite: false
-    replicas: 6
+    replicas: 10
     team: marketing
+status:
+  iconURL: ""
+  managedGVRs: null
+  reconciliationStatus:
+    errors: null
+  templateResolvedVersion: ""
