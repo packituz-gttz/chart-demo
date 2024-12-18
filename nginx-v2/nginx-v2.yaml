@@ -1,0 +1,27 @@
+apiVersion: cyclops-ui.com/v1alpha1
+kind: Module
+metadata:
+  annotations:
+    cyclops-ui.com/write-path: nginx-v2
+    cyclops-ui.com/write-repo: https://github.com/packituz-gttz/chart-demo
+    cyclops-ui.com/write-revision: master
+  creationTimestamp: null
+  name: nginx-v2
+spec:
+  targetNamespace: guestbook
+  template:
+    path: chart
+    repo: https://github.com/packituz-gttz/chart-demo
+    version: master
+  values:
+    appName: nginx2
+    environmentVars: {}
+    favourite: true
+    replicas: 5
+    team: genai
+status:
+  iconURL: ""
+  managedGVRs: null
+  reconciliationStatus:
+    errors: null
+  templateResolvedVersion: ""
