@@ -1,0 +1,28 @@
+apiVersion: cyclops-ui.com/v1alpha1
+kind: Module
+metadata:
+  annotations:
+    cyclops-ui.com/write-path: https://github.com/packituz-gttz/chart-demo/blob/master/gitops-demo/
+    cyclops-ui.com/write-repo: https://github.com/packituz-gttz/chart-demo
+    cyclops-ui.com/write-revision: master
+  creationTimestamp: null
+  name: chart-demo1
+spec:
+  targetNamespace: default
+  template:
+    path: chart
+    repo: https://github.com/packituz-gttz/chart-demo
+    sourceType: git
+    version: master
+  values:
+    appName: demo1
+    environmentVars: {}
+    favourite: false
+    replicas: 1
+    team: marketing
+status:
+  iconURL: ""
+  managedGVRs: null
+  reconciliationStatus:
+    errors: null
+  templateResolvedVersion: ""
