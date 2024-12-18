@@ -6,8 +6,9 @@ metadata:
     cyclops-ui.com/write-repo: https://github.com/packituz-gttz/chart-demo
     cyclops-ui.com/write-revision: master
   creationTimestamp: null
+  labels:
+    app.kubernetes.io/instance: nginx-demo
   name: nginx-v1
-  namespace: cyclops
 spec:
   targetNamespace: guestbook
   template:
@@ -20,3 +21,9 @@ spec:
     favourite: true
     replicas: 9
     team: sales
+status:
+  iconURL: ""
+  managedGVRs: null
+  reconciliationStatus:
+    errors: null
+  templateResolvedVersion: ""
