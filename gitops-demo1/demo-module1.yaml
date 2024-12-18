@@ -22,9 +22,3 @@ spec:
     favourite: false
     replicas: 10
     team: marketing
-status:
-  iconURL: ""
-  managedGVRs: null
-  reconciliationStatus:
-    errors: null
-  templateResolvedVersion: ""
