@@ -7,6 +7,7 @@ metadata:
     cyclops-ui.com/write-revision: master
   creationTimestamp: null
   name: demo-module1
+  namespace: cyclops
 spec:
   targetNamespace: default
   template:
