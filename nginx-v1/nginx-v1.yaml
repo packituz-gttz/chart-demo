@@ -7,6 +7,7 @@ metadata:
     cyclops-ui.com/write-revision: master
   creationTimestamp: null
   name: nginx-v1
+  namespace: cyclops
 spec:
   targetNamespace: guestbook
   template:
@@ -19,9 +20,3 @@ spec:
     favourite: true
     replicas: 9
     team: sales
-status:
-  iconURL: ""
-  managedGVRs: null
-  reconciliationStatus:
-    errors: null
-  templateResolvedVersion: ""
