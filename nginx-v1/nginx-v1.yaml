@@ -9,7 +9,6 @@ metadata:
   labels:
     app.kubernetes.io/instance: nginx-demo
   name: nginx-v1
-  namespace: cyclops
 spec:
   targetNamespace: guestbook
   template:
@@ -20,5 +19,11 @@ spec:
     appName: nginx1
     environmentVars: {}
     favourite: true
-    replicas: 1
+    replicas: 2
     team: sales
+status:
+  iconURL: ""
+  managedGVRs: null
+  reconciliationStatus:
+    errors: null
+  templateResolvedVersion: ""
