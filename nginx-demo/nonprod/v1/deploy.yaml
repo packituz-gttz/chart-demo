@@ -1,0 +1,29 @@
+apiVersion: cyclops-ui.com/v1alpha1
+kind: Module
+metadata:
+  annotations:
+    cyclops-ui.com/write-path: nginx-demo/nonprod/v1
+    cyclops-ui.com/write-repo: https://github.com/packituz-gttz/chart-demo
+    cyclops-ui.com/write-revision: master
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/instance: nginx-demo-v1
+  name: nginx-demo-v1
+spec:
+  targetNamespace: default
+  template:
+    path: chart
+    repo: https://github.com/packituz-gttz/chart-demo
+    version: master
+  values:
+    appName: nginx-demo-1
+    environmentVars: {}
+    favourite: true
+    replicas: 2
+    team: sales
+status:
+  iconURL: ""
+  managedGVRs: null
+  reconciliationStatus:
+    errors: null
+  templateResolvedVersion: ""
