@@ -5,6 +5,7 @@ metadata:
     cyclops-ui.com/write-path: nginx-v1
     cyclops-ui.com/write-repo: https://github.com/packituz-gttz/chart-demo
     cyclops-ui.com/write-revision: master
+    cyclops/reconciled-at: "2024-12-18T18:24:02Z"
   creationTimestamp: null
   labels:
     app.kubernetes.io/instance: nginx-demo
