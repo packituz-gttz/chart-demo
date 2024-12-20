@@ -30,6 +30,7 @@
       "title": "replicas",
       "type": "integer",
       "minimum": 1
+      "readOnly": true
     },
     "environmentVars": {
       "title": "environment variables",
