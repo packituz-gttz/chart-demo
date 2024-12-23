@@ -2,4 +2,7 @@ appName: my-app
 replicas: 2
 team: marketing
 favourite: false
+image:
+  name: nginx
+  tag: latest
 environmentVars:
