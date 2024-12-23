@@ -21,6 +21,9 @@ spec:
     favourite: true
     replicas: 3
     team: sales
+    image:
+      name: nginx
+      tag: 1.26.2
 status:
   iconURL: ""
   managedGVRs: null
