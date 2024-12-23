@@ -1,0 +1,8 @@
+appName: nginx-demo-2
+environmentVars: {}
+favourite: true
+replicas: 3
+team: sales
+image:
+  name: nginx
+  tag: 1.26.2
