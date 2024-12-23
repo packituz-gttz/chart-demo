@@ -6,40 +6,69 @@
       "default": "my-app",
       "required": [],
       "title": "appName",
-      "type": "string",
-      "maxLength": 50,
-      "minLength": 5
-    },
-    "team": {
-      "required": [],
-      "title": "team",
-      "type": "string",
-      "minLength": 2,
-      "immutable": true
-    },
-    "favourite": {
-      "default": "true",
-      "required": [],
-      "title": "favourite",
-      "type": "boolean",
-      "immutable": true
-    },
-    "replicas": {
-      "default": 1,
-      "required": [],
-      "title": "replicas",
-      "type": "integer",
-      "minimum": 1,
-      "readOnly": true
+      "type": "string"
     },
     "environmentVars": {
-      "title": "environment variables",
+      "default": "",
+      "required": [],
+      "title": "environmentVars",
+      "type": "null"
+    },
+    "favourite": {
+      "default": false,
+      "required": [],
+      "title": "favourite",
+      "type": "boolean"
+    },
+    "global": {
+      "description": "Global values are values that can be accessed from any chart or subchart by exactly the same name.",
+      "required": [],
+      "title": "global",
       "type": "object"
+    },
+    "image": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "default": "nginx",
+          "required": [],
+          "title": "name",
+          "type": "string"
+        },
+        "tag": {
+          "default": "latest",
+          "required": [],
+          "title": "tag",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "tag"
+      ],
+      "title": "image",
+      "type": "object"
+    },
+    "replicas": {
+      "default": 2,
+      "required": [],
+      "title": "replicas",
+      "type": "integer"
+    },
+    "team": {
+      "default": "marketing",
+      "required": [],
+      "title": "team",
+      "type": "string"
     }
   },
   "required": [
     "appName",
-    "team"
+    "replicas",
+    "team",
+    "favourite",
+    "image",
+    "environmentVars"
   ],
   "type": "object"
 }
