@@ -7,7 +7,7 @@ metadata:
     cyclops-ui.com/write-revision: master
   creationTimestamp: null
   labels:
-    app.kubernetes.io/instance: app
+    app.kubernetes.io/instance: nginx-demo3
   name: nginx-demo-v4
 spec:
   targetNamespace: default
@@ -23,5 +23,8 @@ spec:
     image:
       name: nginx
       tag: latest
-    replicas: 3
+    replicas: 4
     team: marketing
+status:
+  iconURL: https://github.com/cyclops-ui/cyclops/blob/main/cyclops-ui/src/static/img/default-template-icon.png?raw=true
+  templateResolvedVersion: 612ad8ae12f09c94c7eda4f08cd6a919ad16e387
