@@ -2,7 +2,7 @@ apiVersion: cyclops-ui.com/v1alpha1
 kind: Module
 metadata:
   annotations:
-    cyclops-ui.com/write-path: nginx-demo-v3/
+    cyclops-ui.com/write-path: nginx-demo-v3/templates/
     cyclops-ui.com/write-repo: https://github.com/packituz-gttz/chart-demo
     cyclops-ui.com/write-revision: master
   creationTimestamp: null
