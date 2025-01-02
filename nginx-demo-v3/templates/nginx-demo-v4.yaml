@@ -6,6 +6,8 @@ metadata:
     cyclops-ui.com/write-repo: https://github.com/packituz-gttz/chart-demo
     cyclops-ui.com/write-revision: master
   creationTimestamp: null
+  labels:
+    app.kubernetes.io/instance: app
   name: nginx-demo-v4
 spec:
   targetNamespace: default
@@ -16,13 +18,12 @@ spec:
     version: master
   values:
     appName: my-app
-    environmentVars: null
     favourite: false
     global: {}
     image:
       name: nginx
       tag: latest
-    replicas: 2
+    replicas: 3
     team: marketing
 status:
   iconURL: ""
