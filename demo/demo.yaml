@@ -6,6 +6,8 @@ metadata:
     cyclops-ui.com/write-repo: https://github.com/packituz-gttz/chart-demo
     cyclops-ui.com/write-revision: master
   creationTimestamp: null
+  labels:
+    app.kubernetes.io/instance: demo
   name: demo
 spec:
   targetNamespace: default
@@ -22,5 +24,6 @@ spec:
     image:
       repository: ghcr.io/packituz-gttz/demo
       tag: 1.0.0
-    replicas: 1
-status: {}
+    replicas: 2
+status:
+  templateResolvedVersion: f863bd90087337e58258aee88bc34cb012bd7b0d
