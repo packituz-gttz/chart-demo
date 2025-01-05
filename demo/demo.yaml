@@ -1,0 +1,26 @@
+apiVersion: cyclops-ui.com/v1alpha1
+kind: Module
+metadata:
+  annotations:
+    cyclops-ui.com/write-path: demo
+    cyclops-ui.com/write-repo: https://github.com/packituz-gttz/chart-demo
+    cyclops-ui.com/write-revision: master
+  creationTimestamp: null
+  name: demo
+spec:
+  targetNamespace: default
+  template:
+    path: charts/demo-chart
+    repo: https://github.com/packituz-gttz/charts-example
+    sourceType: git
+    version: master
+  values:
+    appName: demo
+    environmentVariables:
+      OS: Ubuntu
+    global: {}
+    image:
+      repository: ghcr.io/packituz-gttz/demo
+      tag: 1.0.0
+    replicas: 1
+status: {}
